@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TECH GJ SOFTWARE</title>
+<style>
+:root{--bg:#05070b;--card:#0d1118;--line:#1d2735;--blue:#087cff;--white:#f7f9fc;--muted:#9aa7b8}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--white)}
+header{position:sticky;top:0;z-index:20;background:#05070bf2;border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand img{width:48px;height:48px;object-fit:cover;border-radius:10px}.brand span{color:#1685ff}
+nav a{color:#cbd4e0;text-decoration:none;margin-left:20px;font-weight:700;font-size:14px}
+.hero{max-width:1180px;margin:auto;padding:60px 20px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,70px);line-height:1;margin:12px 0}.hero h1 span{color:#1685ff}.hero p{font-size:18px;color:var(--muted);max-width:650px}.tag{display:inline-block;color:#1685ff;border:1px solid #174b83;border-radius:30px;padding:7px 12px;font-size:12px;font-weight:900}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{padding:14px 18px;border-radius:10px;text-decoration:none;font-weight:900;display:inline-block}.blue{background:var(--blue);color:white}.dark{border:1px solid #344052;color:white}
+.hero-logo{background:radial-gradient(circle,#111c2a,#070a0f 65%);border:1px solid var(--line);border-radius:24px;padding:25px;text-align:center}.hero-logo img{width:min(100%,450px);border-radius:16px}
+section{max-width:1180px;margin:auto;padding:55px 20px}.title{text-align:center;margin-bottom:30px}.title h2{font-size:34px;margin:0 0 8px}.title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:20px}.card h3{margin:0 0 8px}.price{color:#1685ff;font-size:27px;font-weight:900}.duration{color:var(--muted);margin:3px 0 16px;font-size:14px}.order{display:block;text-align:center;padding:10px;border:1px solid #344052;border-radius:9px;color:white;text-decoration:none;font-weight:800}.order:hover{background:#087cff;border-color:#087cff}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.features .card{text-align:center}.ico{font-size:30px}.features p{color:var(--muted);font-size:14px}
+.cta{text-align:center;background:linear-gradient(135deg,#0d1724,#080c13);border:1px solid #1e3550;border-radius:22px;padding:45px 20px}.cta p{color:var(--muted);max-width:650px;margin:10px auto 24px}
+footer{text-align:center;border-top:1px solid var(--line);padding:28px;color:#788496;font-size:13px}
+.admin{display:none;position:fixed;inset:0;background:#05070b;z-index:50;overflow:auto}.admin-box{max-width:1000px;margin:30px auto;padding:20px}.admin-card{background:#0d1118;border:1px solid var(--line);padding:20px;border-radius:15px;margin-bottom:15px}.admin input{width:100%;padding:11px;margin:5px 0 10px;background:#080b10;color:white;border:1px solid #334052;border-radius:8px}.admin button{padding:11px 15px;border:0;border-radius:8px;background:#087cff;color:white;font-weight:800;cursor:pointer}.close{float:right;background:#222!important}.admin-list div{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #202a38}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.grid,.features{grid-template-columns:1fr 1fr}nav a{margin-left:8px}.hero-logo{max-width:520px;margin:auto}}
+@media(max-width:520px){nav{display:none}.grid,.features{grid-template-columns:1fr}.hero{padding-top:40px}.hero-logo{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="#"><img src="logo.png" alt="TECH GJ SOFTWARE"><span>TECH GJ SOFTWARE</span></a><nav><a href="#ferramentas">Ferramentas</a><a href="#servicos">Serviços</a><a href="#contacto">Contacto</a></nav></div></header>
+
+<main>
+<section class="hero"><div><span class="tag">SOFTWARE • SUPORTE • ALUGUER</span><h1>TECH GJ <span>SOFTWARE</span></h1><p><b>Actualização de celular e aluguer de ferramentas.</b><br>Escolha a ferramenta que precisa ou faça um pedido através do nosso grupo de WhatsApp.</p><div class="actions"><a class="btn blue" href="https://chat.whatsapp.com/LZXjeI3MsYc8jDpgtLYuXC?s=cl&p=a&ilr=4" target="_blank">📲 Grupo WhatsApp</a><a class="btn dark" href="#ferramentas">🛠 Ver ferramentas</a></div></div><div class="hero-logo"><img src="logo.png" alt="Logótipo TECH GJ SOFTWARE"><p>WhatsApp: <b>86 142 2480</b></p></div></section>
+
+<section id="ferramentas"><div class="title"><h2>Ferramentas disponíveis</h2><p>Aluguer por períodos flexíveis.</p></div><div class="grid" id="products"></div></section>
+
+<section id="servicos"><div class="title"><h2>Os nossos serviços</h2></div><div class="features"><div class="card"><div class="ico">⚡</div><h3>Aluguer rápido</h3><p>Faça o pedido diretamente pelo WhatsApp.</p></div><div class="card"><div class="ico">📱</div><h3>Actualização de celulares</h3><p>Serviços e ferramentas para manutenção de software.</p></div><div class="card"><div class="ico">🛠️</div><h3>Outras ferramentas</h3><p>Peça outras ferramentas disponíveis no grupo.</p></div></div></section>
+
+<section id="contacto"><div class="cta"><h2>Não encontrou a ferramenta?</h2><p>Entre no nosso grupo de WhatsApp para consultar outras ferramentas, disponibilidade e fazer pedidos.</p><a class="btn blue" href="https://chat.whatsapp.com/LZXjeI3MsYc8jDpgtLYuXC?s=cl&p=a&ilr=4" target="_blank">📲 Entrar no Grupo WhatsApp</a><p>Atendimento: <b>86 142 2480</b></p></div></section>
+</main>
+<footer>© 2026 TECH GJ SOFTWARE — Actualização de celular e aluguer de ferramentas.</footer>
+
+<div class="admin" id="admin"><div class="admin-box"><button class="close" onclick="closeAdmin()">Fechar</button><h2>Painel de Administração</h2><div class="admin-card"><h3>Adicionar ferramenta</h3><input id="n" placeholder="Nome da ferramenta"><input id="p" placeholder="Preço (ex.: 100 MT)"><input id="d" placeholder="Duração (ex.: 6 horas)"><button onclick="addProduct()">Adicionar</button></div><div class="admin-card"><h3>Ferramentas cadastradas</h3><div class="admin-list" id="adminList"></div></div></div></div>
+
+<script>
+const defaultProducts=[
+["Android Multi Tool","70 MT","2 horas"],["AndroidWinTool","150 MT","40 horas"],["Anonyshu","200 MT","12 horas"],["Cheetahtool","700 MT","7 dias"],["DFT","200 MT","48 horas"],["EFT","120 MT","1 hora"],["MDMFixTool","100 MT","6 horas"],["MobileSeaService","100 MT","6 horas"],["Pandora Tool","700 MT","2 dias"],["Samsungkgtool.us","200 MT","10 horas"],["TSM","85 MT","3 horas"],["UnlockTool","85 MT","6 horas"]
+];
+let products=JSON.parse(localStorage.getItem("techgj_products")||"null")||defaultProducts;
+function render(){document.getElementById("products").innerHTML=products.map(x=>`<article class="card"><h3>${x[0]}</h3><div class="price">${x[1]}</div><div class="duration">⏱ ${x[2]}</div><a class="order" target="_blank" href="https://wa.me/258861422480?text=${encodeURIComponent("Olá TECH GJ, quero alugar "+x[0]+" por "+x[2]+".")}">Pedir pelo WhatsApp</a></article>`).join("")}
+function renderAdmin(){document.getElementById("adminList").innerHTML=products.map((x,i)=>`<div><span>${x[0]} — ${x[1]} / ${x[2]}</span><button onclick="del(${i})">Remover</button></div>`).join("")}
+function addProduct(){let n=document.getElementById("n").value.trim(),p=document.getElementById("p").value.trim(),d=document.getElementById("d").value.trim();if(!n||!p||!d)return alert("Preencha todos os campos.");products.push([n,p,d]);localStorage.setItem("techgj_products",JSON.stringify(products));document.getElementById("n").value=document.getElementById("p").value=document.getElementById("d").value="";render();renderAdmin()}
+function del(i){products.splice(i,1);localStorage.setItem("techgj_products",JSON.stringify(products));render();renderAdmin()}
+function openAdmin(){let pass=prompt("Senha do administrador:");if(pass==="1234"){document.getElementById("admin").style.display="block";renderAdmin()}else if(pass!==null)alert("Senha incorreta.")}
+function closeAdmin(){document.getElementById("admin").style.display="none"}
+render(); 
+document.addEventListener("keydown",e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==="a")openAdmin()});
+</script>
+</body>
+</html>
